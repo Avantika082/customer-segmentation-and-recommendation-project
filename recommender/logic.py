@@ -5,9 +5,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 # Load Data
-customers_df = pd.read_csv('../Dataset/Customers.csv')
-products_df = pd.read_csv('../Dataset/Products.csv')
-transactions_df = pd.read_csv('../Dataset/Transactions.csv')
+customers_df = pd.read_csv('Dataset/Customers.csv')
+products_df = pd.read_csv('Dataset/Products.csv')
+transactions_df = pd.read_csv('Dataset/Transactions.csv')
 
 
 # Build customer product interaction
