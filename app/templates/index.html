@@ -5,13 +5,17 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="container">
     <h1>Enter Customer ID for Recommendations</h1>
     <h5>Enter any number between 1 - 500</h5>
+    <div class="input-group">
     <input type="number" id="customerIdInput" placeholder="Enter Customer ID" />
     <button onclick="getRecommendations()">Get Recommendations</button>
+    </div>
+    </div>
 
     <div id="results"></div>
-
+    
     <script>
         function getRecommendations() {
             const customerId = document.getElementById('customerIdInput').value;
